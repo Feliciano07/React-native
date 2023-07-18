@@ -6,6 +6,7 @@ import { StackNavigator } from './StackNavigator';
 import SettingsScreen from '../screens/SettingsScreen';
 import { Image, Text, View } from 'react-native';
 import { style } from '../theme/appTheme';
+import { Tabs } from './Tabs';
 
 const CustomDrawer = (props: DrawerContentComponentProps) => {
     return(
@@ -39,9 +40,9 @@ export const MainDrawer = () => {
         <Drawer.Navigator
             drawerContent={(props) => <CustomDrawer {...props}/>}
         >
-            <Drawer.Screen name="StackNavigator" component={StackNavigator} options={{
+            <Drawer.Screen name="Tabs" component={Tabs} options={{
                 drawerActiveTintColor: 'green',
-                drawerLabel: ({ color, focused }) => renderTitleItem('Stack', focused),
+                drawerLabel: ({ color, focused }) => renderTitleItem('Tabs', focused),
             }}/>
             <Drawer.Screen name="SettingsScreen"  component={SettingsScreen} options={{
                 drawerActiveTintColor: 'green',
