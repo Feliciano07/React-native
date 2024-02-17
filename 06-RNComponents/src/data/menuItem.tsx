@@ -10,4 +10,6 @@ export const menuItems: MenuItem[] = [
     {name:'SectionList', icon: 'list-outline', component: 'SectionListScreen'},
     {name:'Modal', icon: 'copy-outline', component: 'ModalScreen'},
     {name:'InfiniteScroll', icon: 'download-outline', component: 'InfiniteScrollScreen'},
+    {name:'Slide', icon: 'flower-outline', component: 'SlideScreen'},
+    {name:'ChangeTheme', icon: 'flask-outline', component: 'ChangeThemeScreen'},
 ]
