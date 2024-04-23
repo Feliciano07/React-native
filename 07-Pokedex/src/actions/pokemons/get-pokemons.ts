@@ -23,7 +23,7 @@ export const getPokemons = async (page: number, limit: number = 20): Promise<Pok
         return await Promise.all(pokemonsPromises);
 
     } catch (error) {
-        throw new Error('Error getting pokemons');
+        throw new Error(`Error getting getPokemons: ${error}`);
     }
 
 }
